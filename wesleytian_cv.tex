@@ -1,0 +1,108 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\name{Wesley Tian} % Your name
+\address{{413~$\cdot$~636~$\cdot$~6304} \\ {5 Valley Ln} \\ {Amherst, MA 01002}}
+\address{\href{mailto:wesley.tian@icloud.com}{wesley.tian@icloud.com} \\ \href{http://wesleytian.com/}{wesleytian.com} \\ \href{http://github.com/wesleytian}{github.com/wesleytian}}
+
+\begin{document}
+	
+	%----------------------------------------------------------------------------------------
+	%	EDUCATION SECTION
+	%----------------------------------------------------------------------------------------
+	
+	\begin{rSection}{Education}
+		{\bf University of Massachusetts, Amherst} \hfill {Dec. 2018} \\ 
+		B.S. in Computer Science \& Mathematics (Statistics Concentration) \\
+		GPA: 3.82 / 4.00 \smallskip \\
+		Courses: Programming w/ Data Structures, Programming Methodology, Computer Systems Principles, Reasoning Under Uncertainty, Intro to Computation, Artificial Intelligence, Calculus I, II \& III, Intro to Linear Algebra, Game Theory  \\
+		Involvement: Hackers of UMass, Association of Computing Machinery (ACM), Entrepreneurship Club \\
+	\end{rSection}
+	
+	%----------------------------------------------------------------------------------------
+	% AWARDS SECTION
+	%----------------------------------------------------------------------------------------
+	
+	\begin{rSection}{Awards}
+		- Most Creative Use of Indico API at Hamp Hack (2017) \\
+		- Commonwealth Honors College (2016, 2017) \\
+		- Dean's List Honors (2015, 2016, 2017) \\
+		- Chancellor's Scholarship (2015)
+	\end{rSection}
+	
+	%----------------------------------------------------------------------------------------
+	% EXPERIENCE SECTION
+	%----------------------------------------------------------------------------------------
+	
+	\begin{rSection}{EXPRERIENCE}
+			
+		\begin{rSubsection}{RaysHobby LLC} {May 2016 -  Present}{ Intern}{Amherst, MA}
+			\item Designed, assembled and tested embedded circuits and home automation gadgets
+			\item Invented product while working with Prof. Rui Wang on open-source software/hardware business
+			\item Soldered components and developed firmware in C++ for Thermostat Pro.
+		\end{rSubsection}
+	
+		\begin{rSubsection}{XuanLiang Co. Ltd.} {Jan. 2015 -  Feb. 2015}{R \&D  Intern}{Shanghai, China}
+			\item Tested and debugged Android games with over 1 million downloads
+			\item Supported in conceiving new software features
+			\item Collaborated in Java with 10 other team members while communicating in Mandarin
+		\end{rSubsection}
+	
+	\end{rSection}
+	
+	%----------------------------------------------------------------------------------------
+	%	PROJECTS SECTION
+	%----------------------------------------------------------------------------------------
+	
+	\begin{rSection}{PROJECTS}
+	
+		\begin{rSubsection}{FashionFiltr}{Apr. 2017}{Web application}{Amherst, MA}
+			\item Applied state of the art deep learning models to help users narrow down choices when shopping for clothes online
+			\item Trained machine learning models using Indico API and hosted web application using AWS' EC2 instance
+			\item Coded in 24 hours with 2 friends, won Indico sponsored prize and awarded $\$$3000 in API credits	\end{rSubsection}
+	
+		\begin{rSubsection}{Thermostat Pro}{Aug. 2016 - Apr. 2017}{Internet of things (IoT) \& mobile application}{Amherst, MA}
+			\item Detects room temperature and regulates it by controlling RF signal output sent to a remote power socket that your air conditioner or heater is plugged into
+			\item Programmed firmware using C++, built using Arduino and spare components at RaysHobby's workshop
+			\item Mobile app interfaces Thermostat Pro and allows user to monitor room temperature and schedule air conditioner or heater as well as control other settings
+			\item Developed app using cross-platform hybrid Ionic framework for front-end and Blynk API for server
+		\end{rSubsection}
+	\end{rSection}
+	
+	\begin{rSection}{Skills}
+		\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+		Languages & Java, C, C++, Scala, Python, Bash, HTML5, CSS3, JavaScript, Mandarin \\ 
+		Frameworks \& Platforms & Node.js, Ionic, AngularJS, Apache Cordova\\
+		APIs & jQuery, Blynk, Google Maps, Indico \\
+		Tools & Git, \LaTeX \\
+		    \end{tabular}
+	\end{rSection}
+	
+\end{document}
