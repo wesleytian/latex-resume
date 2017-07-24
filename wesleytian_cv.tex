@@ -22,15 +22,15 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
 \usepackage{hyperref}
 
 \usepackage{etoolbox}
 \patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
 
 \name{Wesley Tian} % Your name
-\address{{413~$\cdot$~636~$\cdot$~6304} \\ {5 Valley Ln} \\ {Amherst, MA 01002}}
-\address{\href{mailto:wesley.tian@icloud.com}{wesley.tian@icloud.com} \\ \href{http://wesleytian.com/}{wesleytian.com} \\ \href{http://github.com/wesleytian}{github.com/wesleytian}}
+\address{{413~$\cdot$~636~$\cdot$~6304} \\ {\href{mailto:wesley.tian@icloud.com}{wesley.tian@icloud.com}} {}}
+\address{\href{mailto:wesley.tian@icloud.com}{linkedin.com/in/wesleytian} \\ \href{http://wesleytian.com/}{wesleytian.com} \\ \href{http://github.com/wesleytian}{github.com/wesleytian}}
 
 \begin{document}
 	
@@ -48,6 +48,7 @@
 		Selected Courses: Linear Algebra, Reasoning Under Uncertainty, Artificial Intelligence, Game Theory
 		
 		\textbf{Coursera.org} \hfill {Online} \\ 
+		$\cdot$ 2+ MOOCs completed \\
 		Selected Courses: Machine Learning by Stanford University \hfill {\textit{May 2017 - Present}}
 	\end{rSection}
 	
@@ -56,28 +57,30 @@
 	%----------------------------------------------------------------------------------------
 	
 	\begin{rSection}{Awards}
-		- 1st Place at Fidelity Investments Inc. Merrimack Hackathon (2017) \\
+		- 1st Place Fidelity Investments Inc. Merrimack Hackathon (2017) \\
 		- Best Use of Indico Machine Learning API at HampHack (2017) \\
 		- Dean's List Honors (2015, 2016, 2017) \\
 		- Chancellor's Scholarship (2015)
 	\end{rSection}
-	
+
 	%----------------------------------------------------------------------------------------
 	% EXPERIENCE SECTION
 	%----------------------------------------------------------------------------------------
 	
 	\begin{rSection}{EXPRERIENCE}
 			
-		\begin{rSubsection}{Fidelity Investments Inc.} {Merrimack, NH}{Software Engineering Intern}{May 2017 - Present}
-			\item Implementing query automation tool with Angular 2 for easy data retrieval from company databases
-			\item Working with five other interns to devise and present a mobile app that promotes investing in children
-			\item Developed Angular 2 components and services for Digital Interview Experience hackathon project
+		\begin{rSubsection}{Fidelity Investments Inc.} {Merrimack, NH}{Software Engineering Intern}{May 2017 - Aug. 2017}
+			\item Implementing query tool using Angular 2 and Java for easy data retrieval from Oracle databases
+			\item Participated in daily scrum meetings, and worked in Agile paradigm
+			\item Assisted in winning Fidelity hackathon by developing scheduling application using Angular 2
+			\item Volunteered by teaching children about physics concepts while building roller coasters
 		\end{rSubsection}
 	
-		\begin{rSubsection}{RaysHobby LLC} {Amherst, MA}{Intern}{May 2016 - May 2017}
-			\item Soldered, assembled and extensively tested embedded circuits and home automation gadgets
-			\item Worked with Professor Rui Wang to create new gadgets
-			\item Designed the Thermostat Pro home automation gadget and programmed its firmware in C
+		\begin{rSubsection}{Rayshobby LLC} {Amherst, MA}{Intern}{May 2016 - May 2017}
+			\item Soldered, assembled and tested embedded circuits and smart home gadgets
+			\item Worked with computer science Professor Rui Wang to develop ThermostatPro
+			\item ThermostatPro detects room temperature and regulates it by controlling RF signal outputs to third-party outlets
+			\item Programmed firmware using C++ and built device using components from around workshop after work hours
 		\end{rSubsection}
 	
 	\end{rSection}
@@ -88,32 +91,26 @@
 	
 	\begin{rSection}{PROJECTS}
 	
-		\begin{rSubsection}{Roshambo God: Rock, Paper, Sicssors Bot}{May 2017}{}{}
-			\item Built Java bot that plays user in a game of rock, paper, scissors
-			\item Uses player's history and Bayesian mechanics to predict player's next move
-			
+		\begin{rSubsection}{Rock, Paper, Scissors AI}{\textit{May 2017}}{}{}
+			\item Programmed AI in Java that is able to predict player's next move based on player history and Bayesian statistics
 		\end{rSubsection}
 	
-		\begin{rSubsection}{FashionFiltr: Machine Learning Shopping Filter }{Apr. 2017}{}{}
+		\begin{rSubsection}{FashionFiltr}{\textit{Apr. 2017}}{}{}
+			\item Web application that filters clothes using user's shopping history and machine learning for image analysis
 			\item Applied state-of-the-art deep learning models to help users narrow down choices when shopping for clothes online
 			\item Trained machine learning models using Indico API and hosted web application using AWS' EC2 instance
+		\end{rSubsection}
+	
+	\end{rSection}
 
-		\end{rSubsection}
+	\begin{rSection}{Skills}
+	\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+		Languages & Java, C++, Scala, C, Python, HTML, CSS, JavaScript, TypeScript, Octave \\ 
+		Technologies/Frameworks & Git, Angular 2, Node.js, AWS EC2\\
+		Other Skills & Mandarin Chinese (professional), Mountaineering, Cooking
+	\end{tabular}
 	
-		\begin{rSubsection}{Thermostat Pro: Home Automation Gadget}{Aug. 2016}{}{}
-			\item Detects room temperature and regulates it by controlling RF signal outputs
-			\item Programmed using C++, built using Arduino and spare components from workshop
-		\end{rSubsection}
-	\end{rSection}
-	
-	\begin{rSection}{Skills \& Interests}
-		\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-		Programming Languages & Java, C, Scala, JavaScript, TypeScript, Python, Octave \\ 
-		Technologies/Frameworks & Angular 2, Node.js, AWS EC2\\
-		Other Skills & Git, Chinese (fluent) \\
-		Interests & Mountaineering, cooking
-		\end{tabular}
-	
-	\end{rSection}
+\end{rSection}
+
 	
 \end{document}
